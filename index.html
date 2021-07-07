@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Test task</title>
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="tm-left-right-container">
+
+                <!-- Left column: logo and menu -->
+                <div class="tm-blue-bg tm-left-column">
+                    <div class="tm-logo-div text-xs-center">
+                        <img src="img/sql_logo.png" alt="Logo">
+                        <h1 class="tm-site">Start work</h1>
+                    </div>
+                    <nav class="tm-main-nav">
+                        <ul class="tm-main-nav-ul">
+
+                            <li class="tm-nav-item">
+                                <a href="#welcome" class="tm-nav-item-link">Authorization</a>
+                            </li>
+                            <li class="tm-nav-item">
+                                <a href="#connection" class="tm-nav-item-link">Connecting to the database</a>
+                            </li>
+                            <li class="tm-nav-item">
+                                <a href="#received" class="tm-nav-item-link">Received information</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div> <!-- Left column: logo and menu -->
+
+                <!-- Right column: content -->
+                <div class="tm-right-column">
+                    <figure>
+                        <img src="img/sql_1.jpg" alt="Header image" class="img-fluid">
+                    </figure>
+
+                    <div class="tm-content-div">
+                        <!-- Welcome section -->
+                        <section id="welcome" class="tm-section">
+                            <header>
+                                <h2 class="tm-blue-text tm-welcome-title ">Welcome to the communication setup</h2>
+                            </header>
+                            <p>To establish a connection with the database, you need to enter a username and password, a
+                                standard username and password :root/masterkey</p>
+                        </section>
+
+                        <!-- Connection section -->
+                        <section id="connection" class="tm-section">
+                            <header>
+                                <h2 class="tm-blue-text tm-section-title ">Setting up a connection</h2>
+                            </header>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form action="#contact">
+                                        <div class="form-group">
+                                            <input type="text" id="Login" name="Login" class="form-control"
+                                                placeholder="Login" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" id="Password" name="Password" class="form-control"
+                                                placeholder="Password" required />
+                                        </div>
+
+                                        <button type="submit" id="Button" class="float-right tm-button">Connect</button>
+
+                                    </form>
+                                </div>
+
+                                <div class="col-lg-6 tm-connection-right">
+                                    <p id="vote_status">
+                                        Database connection status:
+                                    </p>
+                                    <p id="Presence">
+                                        Presence of errors:
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!--Received section -->
+                        <section " class=" tm-section">
+                            <div>
+                                <header>
+                                    <p class="h2 tm-blue-text tm-section-title">Received data</p>
+                                </header>
+                                <div id="received">
+                                    <table class="table table-hover">Тут будут ваши данные </table>
+                                </div>
+                            </div>
+                        </section>
+
+                        <footer>
+                            <p class="tm-copyright-p"> |Выполнено в качестве тестового задания|
+                        </footer>
+
+                    </div>
+
+                </div> <!-- Right column: content -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+
+    <!-- load JS files -->
+    <script src="js/handler.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Single page nav
+            $('.tm-main-nav').singlePageNav({
+                'currentClass': "active",
+                offset: 20
+            });
+        });
+    </script>
+
+</body>
+
+</html>

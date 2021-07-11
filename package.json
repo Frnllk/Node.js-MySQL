@@ -3,7 +3,6 @@
   "name": "project_1",
   "version": "1.0.0",
   "description": "try connect to BD",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
